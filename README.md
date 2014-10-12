@@ -1,3 +1,6 @@
+## This repo modifications
+- Angular 1.3
+
 [angular-meteor](http://angularjs.meteor.com/tutorial)
 ======================================================
 > The power of Meteor and the simplicity and eco-system of AngularJS
