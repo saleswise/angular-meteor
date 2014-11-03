@@ -25,9 +25,9 @@ The goals for this step:
 
 # Dependencies
 
-The routing functionality added by this step is provided by by the [ui-router](https://github.com/angular-ui/ui-router) module, which is distributed separately from the core Angular framework.
+The routing functionality added by this step is provided by the [ui-router](https://github.com/angular-ui/ui-router) module, which is distributed separately from the core Angular framework.
 
-We are using a [Meteor package](https://github.com/Urigo/meteor-angular-ui-router) to install that library.
+We are using a [Meteor package](https://github.com/Urigo/meteor-angular-ui-router) to add this module to our app.
 
 Type in the command line:
 
@@ -99,6 +99,9 @@ Now let's go back to index.html and replace the content with the ui-view directi
 
 __`index.html`:__
 
+      <head>
+        <base href="/">
+      </head>
       <body>
 
       <div>
@@ -114,6 +117,7 @@ Notice we did 2 things:
 
 1. replaced all the content with ui-view (that will be responsible of including the right content according to the current url)
 2. Added an h1 header with a link to the main parties page
+3. We added base tag the head (required when using HTML5 location mode)
 
 Now let's add a placeholder to the new party details page.
 Create a new html file called party-details.html and paste the following code in:
